@@ -11,3 +11,9 @@ if files_quantity == 0: #if the folder are empty
 wb = Workbook() #creating workbook
 ws = wb.active
 ws.title = 'Invoice Imports'
+
+#structuring excel file
+ws['A1'] = 'Invoice #'
+ws['B1'] = 'Date'
+ws['C1'] = 'File Name'
+ws['D4'] = 'Status' 
