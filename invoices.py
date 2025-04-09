@@ -8,3 +8,6 @@ files_quantity = len(files) #quantity of invoices
 if files_quantity == 0: #if the folder are empty
     raise Exception("No files found in the directory") #raise a exception to warn the user
 
+wb = Workbook() #creating workbook
+ws = wb.active
+ws.title = 'Invoice Imports'
